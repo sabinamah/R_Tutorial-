@@ -1,0 +1,24 @@
+# Conditional statements in R
+# Conditional statements are used to perform different actions based on different conditions
+age <- 29  # Assign the number 29 to the variable 'age'
+if (age > 18) {  # If 'age' is greater than 18
+  print("YOU are available to join the class")
+} else {  # If 'age' is not greater than 18
+  print("you are not available")
+}
+
+weather <- "cloudy"  # Assign the string "cloudy" to the variable 'weather'
+temperature <- -20  # Assign the number -20 to the variable 'temperature'
+if (weather == "cloudy" & temperature == -28) {  # If 'weather' is "cloudy" and 'temperature' is -28
+  print("You can go outside")
+} else {  # If 'weather' is not "cloudy" or 'temperature' is not -28
+  print("you cannot go outside")
+}
+
+Team_A <- 20  # Assign the number 20 to the variable 'Team_A'
+Team_B <- 100  # Assign the number 100 to the variable 'Team_B'
+if (Team_A == 210 | Team_B == 4) {  # If 'Team_A' is 210 or 'Team_B' is 4
+  message("Team A is win")
+} else {  # If 'Team_A' is not 210 and 'Team_B' is not 4
+  message("Team B is win")
+}
