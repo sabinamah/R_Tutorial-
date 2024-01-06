@@ -1,0 +1,4 @@
+# Variables in R
+# Variables are used to store values for later use
+name <- "hello"  # Assign the string "hello" to the variable 'name'
+name
