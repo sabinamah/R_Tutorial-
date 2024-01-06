@@ -1,7 +1,0 @@
-# R tutorial
-
-# Basic mathematical calculations in R
-# R performs addition, subtraction, multiplication, and division with +, -, *, and /:
-result <- 25 * 4 + 9 / 3  
-# Calculate the expression and store the result in the variable 'result'
-result
