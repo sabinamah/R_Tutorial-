@@ -1,0 +1,6 @@
+# Vectors in R
+# A vector is a sequence of data elements of the same basic type
+months <- c("jan","feb","mar","april","may","june","july")  # Create a character vector of months
+numbers <- c(1,20,30,18,3,8,24)  # Create a numeric vector of numbers
+numbers[2]
+typeof(numbers)
