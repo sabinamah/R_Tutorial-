@@ -1,0 +1,14 @@
+data_frame1 <- data.frame(months, numbers)  # Create a data frame with the vectors 'months' and 'numbers'
+
+# Functions in R
+# A function is a set of statements organized together to perform a specific task
+numbers <- c(23,23,24,90,1,35,70,120,120)  # Create a numeric vector of numbers
+unique_numbers <- unique(numbers)  # Get the unique values in the vector 'numbers'
+sorted_numbers <- sort(numbers)  # Sort the values in the vector 'numbers'
+num_length <- length(numbers)  # Get the length of the vector 'numbers'
+unique_length <- length(unique(numbers))  # Get the length of the unique values in the vector 'numbers'
+numbers_sum <- sum(numbers)  # Calculate the sum of the values in the vector 'numbers'
+sqrt_23 <- sqrt(23)  # Calculate the square root of 23
+sqrt_49 <- sqrt(49)  # Calculate the square root of 49
+floor_val <- floor(4.56)  # Round down the value 4.56
+ceiling_val <- ceiling(4.56)  # Round up the value 4.56
