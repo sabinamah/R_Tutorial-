@@ -1,0 +1,4 @@
+# Comparison operators in R
+# Comparison operators are used to compare values
+comp_result1 <- 78 <= 20  # Check if 78 is less than or equal to 20
+comp_result2 <- 78 != 20  # Check if 78 is not equal to 20
