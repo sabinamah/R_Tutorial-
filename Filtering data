@@ -1,0 +1,14 @@
+# Filtering data
+filtered_data <- filter(mydata2, Index %in% c("A","C"))
+filtered_data1 <- filter(mydata2, Index %in% c("A","C") & Y2008>= 1700000)
+filtered_data2 <- filter(mydata2, Index %in% c("A","C")| Y2008>= 1700000)
+filtered_data3 <- filter(mydata2, !Index %in% c("A","C"))
+
+# Pattern matching with grepl
+pattern_matched_data <- filter(mydata3, grepl("Ar",State))
+
+# Summarizing data
+summary <- summarise(mydata,Y2015_mean = mean(Y2015), Y2015_median = median(Y2015))
+variance <- summarise(mydata, var(Y2005,Y2006), list(~n(),~mean(.),~median(.)))
+unique_counts <- summarise_at(mydata3, vars(Y2002), ~length(unique(.)))
+unique_counts_for_y2005_y2006 <- summarise_at(mydata, vars(Y2005, Y2006), function(x) length(unique(x)))
