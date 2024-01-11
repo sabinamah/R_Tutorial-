@@ -1,0 +1,4 @@
+# Box plot of drat by cylinder
+mtcars$cyl = factor(mtcars$cyl)
+ggplot(mtcars, aes(x=cyl, y=drat)) +
+  geom_boxplot(notch = FALSE)
