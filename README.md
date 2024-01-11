@@ -1,7 +1,11 @@
 # R_Tutorial
 
+
+
 ## What is R?
 R is a language and environment for statistical computing and graphics. It provides a wide variety of statistical and graphical techniques, and is highly extensible.
+
+!ggplot2 logo
 
 ## Why Learn R?
 - **Open Source**: R is an open-source programming language, which means it's free to install and use.
@@ -11,4 +15,3 @@ R is a language and environment for statistical computing and graphics. It provi
 
 ## Purpose
 The purpose of this tutorial is to provide a comprehensive introduction to R programming for beginners. It covers the basics of R syntax, data structures, and functions, and also delves into more advanced topics like data visualization and statistical modeling. By the end of this tutorial, you should have a solid foundation in R programming, which will allow you to conduct data analysis and create stunning data visualizations with ease.
-!ggplot2 logo
