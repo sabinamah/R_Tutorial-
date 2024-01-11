@@ -5,7 +5,7 @@
 ## What is R?
 R is a language and environment for statistical computing and graphics. It provides a wide variety of statistical and graphical techniques, and is highly extensible.
 
-!/Users/sabinamahnesaei/Desktop/r tu/Tutorial R/Rplot.png
+
 
 
 ## Why Learn R?
