@@ -1,0 +1,8 @@
+# Intersecting data frames
+mtcars$model <- rownames(mtcars)
+first <- mtcars[1:20, ]
+second <- mtcars[10:32, ]
+intersected_data <- intersect(first,second)
+
+# Binding rows
+combined_data <- bind_rows(df1,df2)
