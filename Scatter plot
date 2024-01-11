@@ -1,0 +1,14 @@
+# Scatter plot of Sepal.Width by Sepal.Length with Species as color and shape
+ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width, shape = Species, color = Species)) +
+  geom_point(size = 2.5) +
+  geom_smooth()
+
+# Line plot of horsepower by mpg and disp
+ggplot(mtcars, aes(x = mpg, y = disp, color = hp)) +
+  geom_point(size=2) +
+  geom_line(aes(y = hp))
+
+# Scatter plot of disp by mpg with title
+ggplot(mtcars, aes(x = mpg, y = disp)) +
+  geom_point() +
+  ggtitle(label = "Scatter plot", subtitle = "mtcars data in R")
