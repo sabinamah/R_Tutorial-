@@ -1,6 +1,7 @@
 # R_Tutorial
 
 <img width="400" src= "./1*NXRsFH_12sfj79W-P4qI0Q.webp"/>
+<img width="400" src= "91819ggplot_plots.png"/>
 
 ## What is R?
 R is a language and environment for statistical computing and graphics. It provides a wide variety of statistical and graphical techniques, and is highly extensible.
