@@ -1,0 +1,27 @@
+# Arranging data
+arranged_data <- arrange(mydata, desc(Index), Y2011)
+
+# Using %>%
+dx <- mydata %>%
+  select(State,Y2002) %>%
+  sample_n(10)
+
+# Grouping data
+grouped_data <- summarise_at( group_by(mydata,Index), data_mean = mean(Y2002),.vars = Y2002)
+
+# Creating a data frame
+data <- data.frame(
+  student = c("Alice", "Bob", "Charlie", "Alice", "Bob", "Charlie"),
+  score = c(85, 90, 92, 88, 91, 95)
+)
+
+# Grouping data and calculating average score
+average_scores <- data %>%
+  group_by(student) %>%
+  summarise(average_score = mean(score))
+
+# Using mutate
+x <- data.frame(a = c(1,2,3,4,5,6),
+                b = c(4,5,6,7,8,10))
+mutated_x <- x %>%
+  mutate(x1 = a+b)
