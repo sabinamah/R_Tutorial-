@@ -1,0 +1,26 @@
+# Importing data
+mydata <- read.csv("https://raw.githubusercontent.com/deepanshu88/data/master/sampledata.csv")
+
+# Selecting columns
+selected_columns <- select(mydata, 2,3,9)
+mydata2 <- select(mydata, Index, Y2008)
+mydata3 <- select(mydata, Index, State:Y2010)
+
+# Selecting rows
+rows_selected <- sample_n(mydata, 10)
+random_fraction <- sample_frac(mydata, 0.2)
+
+# Removing duplicate rows
+distinct_rows <- distinct(mydata, Index, .keep_all = TRUE)
+
+# Dropping variables
+data_without_index <- select(mydata, -Index)
+data_without_index_state_y2005 <- select(mydata, -c(Index, State:Y2005))
+
+# Selecting variables based on their names
+variables_not_starting_with_y <- select(mydata, -starts_with("Y"))
+variables_containing_i <- select(mydata, contains("I"))
+mydata5 <- select(mydata,State, everything())
+
+# Renaming variables
+data_with_renamed_index <- rename(mydata,alpha = Index)
