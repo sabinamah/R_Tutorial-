@@ -1,0 +1,4 @@
+# Installing and loading packages
+install.packages("readr")
+library(readr)
+library(dplyr)
