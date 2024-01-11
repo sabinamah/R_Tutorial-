@@ -1,0 +1,27 @@
+# Bar plot with count of cars in each class
+ggplot(mpg, aes(x = class)) +
+  geom_bar(color = "white", fill = "#F6D6D6") +
+  labs(title="Number of Cars in each type", x = "Type of cars", y = "Number of cars") +
+  geom_text(stat='count', aes(label=..count..), vjust=-0.25)
+
+# Bar plot with number of cars in each class
+count(mpg, class) %>%
+  arrange(-n) %>%
+  mutate(class = factor(class, levels= class)) %>%
+  ggplot(aes(x = class, y = n)) +
+  geom_bar(stat = "identity")
+
+# Bar plot showing mean of displacement by car class
+mpg_dataset <- mpg %>%
+  group_by(class) %>%
+  summarise(mean= mean(displ)) %>%
+  arrange(-mean) %>%
+  mutate(class = factor(class, levels= class))
+
+ggplot(mpg_dataset, aes(x = class, y = mean)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label= sprintf("%0.2f", round(mean, digits = 2))), vjust = 1.6, color= "white", fontface="bold", size = 4)
+
+# Bar plot with displacement by car class and drive type
+ggplot(data=mpg, aes(x=class, y=displ, fill=drv)) +
+  geom_bar(stat = "identity", position=position_dodge())
